@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Bootcamp_MVC_2_NUEVO.Models.Home>
+@{
+    ViewData["Title"] = "PAGINA PRINCIPAL";
+}
+
+<div class="text-center">
+    @foreach(var value in Model)
+    {
+    <img src="@value.Logo" width="150" height="70"></img>
+    <h1 class="display-4">@value.Titulo</h1>
+    <p> @value.Descripcion</p>
+    }
+</div>

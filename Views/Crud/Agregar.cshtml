@@ -1,0 +1,51 @@
+﻿@model Bootcamp_MVC_2_NUEVO.Models.Unidades;
+@{
+    ViewData["Title"] = "Agregar Unidad";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Agregar Unidad</h1>
+
+<form method="post" asp-action="Agregar" asp-controller="Crud">
+  <div class="form-group">
+     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <label asp-for="Marca"></label>
+    <input asp-for="Marca" class="form-control" placeholder="Marca">
+     <span asp-validation-for="Marca" class="text-danger"></span>
+  </div>
+
+    <div class="form-group">
+      <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <label asp-for="Modelo"></label>
+    <input asp-for="Modelo" class="form-control" placeholder="Modelo">
+     <span asp-validation-for="Modelo" class="text-danger"></span>
+  </div>
+
+      <div class="form-group">
+      <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <label asp-for="Ano"></label>
+    <input asp-for="Ano" class="form-control" placeholder="Año">
+     <span asp-validation-for="Ano" class="text-danger"></span>
+      </div>
+
+        <div class="form-group">
+      <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <label asp-for="Kilometro"></label>
+    <input asp-for="Kilometro" class="form-control" placeholder="Kilometro">
+     <span asp-validation-for="Kilometro" class="text-danger"></span>
+  </div>
+          <div class="form-group">
+      <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <label asp-for="Precio"></label>
+    <input asp-for="Precio" class="form-control" placeholder="precio">
+     <span asp-validation-for="Precio" class="text-danger"></span>
+  </div>
+       <div class="form-group">
+     <button type="submit" class="btn btn-primary">Confirmar</button>
+</div>
+</form>
+
+@section scripts{
+    @{<partial name="_validationScriptsPartial"/>}
+}
+

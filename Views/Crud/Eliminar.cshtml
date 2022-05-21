@@ -1,0 +1,48 @@
+﻿@model Bootcamp_MVC_2_NUEVO.Models.Unidades;
+@{
+    ViewData["Title"] = "Eliminar Unidad";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Eliminar Unidad</h1>
+
+<form method="post" asp-action="EliminarUnidades">
+  <div class="form-group">
+     <input type="hidden" asp-for="Id"/>
+     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <label asp-for="Marca"></label>
+    <input asp-for="Marca" class="form-control" placeholder="Marca" readonly/>
+     <span asp-validation-for="Marca" class="text-danger"></span>
+  </div>
+
+    <div class="form-group">
+    <label asp-for="Modelo"></label>
+    <input asp-for="Modelo" class="form-control" placeholder="Modelo" readonly/>
+     <span asp-validation-for="Modelo" class="text-danger"></span>
+  </div>
+
+      <div class="form-group">
+    <label asp-for="Ano"></label>
+    <input asp-for="Ano" class="form-control" placeholder="Año" readonly/>
+     <span asp-validation-for="Ano" class="text-danger"></span>
+      </div>
+
+        <div class="form-group">
+    <label asp-for="Kilometro"></label>
+    <input asp-for="Kilometro" class="form-control" placeholder="Kilometro" readonly/>
+     <span asp-validation-for="Kilometro" class="text-danger"></span>
+  </div>
+          <div class="form-group">
+    <label asp-for="Precio"></label>
+    <input asp-for="Precio" class="form-control" placeholder="precio" readonly/>
+     <span asp-validation-for="Precio" class="text-danger"></span>
+  </div>
+      <div class="form-group">
+      <input type="submit" value="Eliminar Unidad" class="btn-primary" />
+  </div>
+</form>
+
+@section scripts{
+    @{<partial name="_validationScriptsPartial"/>}
+}
+
