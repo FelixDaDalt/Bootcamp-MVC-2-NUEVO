@@ -18,20 +18,21 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Unidades" asp-action="Index">Unidades</a>
-                        </li>
-                        <li class="nav-item" padding-right=".6em">
-                            <a class="btn btn-primary" asp-area="" asp-controller="Crud" asp-action="Index">ABM-Vehiculos</a>
-                        </li>
-                        <li class="nav-item" padding-right=".6em">
-                            <a class="btn btn-primary" asp-area="" asp-controller="EditHome" asp-action="Index">Editar-Home</a>
-                        </li>
-                    </ul>
+                    
+                    <table border="0" width="100%">
+<tr>
+<th width="5%">    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+</th>
+<th width="5%">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Unidades" asp-action="Index">Unidades</a>
+
+</th>
+<th style="text-align:right" width="90%">                            <a class="btn btn-primary" asp-area="" asp-controller="Crud" asp-action="Index">ABM-Vehiculos</a>
+     <a class="btn btn-primary" asp-area="" asp-controller="EditHome" asp-action="Index">Editar-Home</a>
+</th>                       
+</tr>
+</table>
+                    
                 </div>
             </div>
         </nav>
